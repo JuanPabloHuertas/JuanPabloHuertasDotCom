@@ -1,0 +1,80 @@
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+
+* {
+    margin    : 0;
+    padding   : 0;
+    border    : none;
+    box-sizing: border-box;
+}
+
+body {
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    min-height      : 100vh;
+    font-size       : .8rem;
+    font-family     : 'Anonymous Pro', monospace;
+    background-color: rgb(25,25,25);
+    color           : rgba(255,255,255,.75);
+    flex-direction: column;
+}
+
+.box img {
+    width: 40%;
+}
+
+.typewriter h1 {
+    overflow      : hidden;
+    border-right  : 2px solid rgba(255,255,255,.75);
+    white-space   : nowrap;
+    margin        : 0 auto;
+    letter-spacing: .15em;
+    animation     : typing 1s steps(15) 1s 1 normal both,
+    blink-caret 500ms steps(44) infinite normal;
+}
+
+.typewriter-revert h1 {
+    overflow      : hidden;
+    border-right  : 2px solid rgba(255,255,255,.75);
+    white-space   : nowrap;
+    margin        : 0 auto;
+    letter-spacing: .15em;
+    animation     : typing-revert 1s steps(15) 1s 1 normal both,
+    blink-caret 500ms steps(44) infinite normal;
+}
+
+@keyframes typing-revert {
+    from {
+        width: 100%;
+    }
+
+    to{
+        width: 0;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from{
+        border-right-color: rgba(255,255,255,.75);
+    }
+
+    to{
+        border-right-color: transparent;
+    }
+}
+
+.animate__fadeInUp {
+    --animate-delay: 2s;
+}
