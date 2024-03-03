@@ -14,22 +14,28 @@ import "../styles/global.css"
 		<link rel="shortcut icon" href="/favicon/favicon.ico?v=2">
 		<meta name="msapplication-TileColor" content="#191919">
 		<meta name="theme-color" content="#191919">
-		<meta name="generator" content={Astro.generator} />
 		<title>Juan Pablo Huertas</title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+		<meta name="description" content="Full stack developer">
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="preload" href="fonts/Mona_Sans/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin>
 	</head>
 	<body>
-		<img id="logo" src="/img/LogoJPH.png" alt="Logo de la pagina">
-
-		<div id="typing" class="typewriter">
-			<h1 id="text">¡ Hola 👋🏻 !</h1>
-		</div>
-		<br />
-		<div class="animate__animated animate__fadeInUp animate__delay-1s">
-			<h2>Mi nombre es Juan Pablo Huertas.</h2>
-		</div>
-		<div class="animate__animated animate__fadeInUp animate__delay-1s">
-			<h2>Pagína en Construcción 👷‍♂️</h2>
-		</div>
+		<main>
+			<picture>
+				<source srcset="/img/LogoJPH.webp" type="image/webp">
+				<source srcset="/img/LogoJPH.png" type="image/png">
+				<img id="logo" src="/img/LogoJPH.png" width="180" height="180" alt="Logo de la pagina">
+			</picture>
+			<div class="content">
+				<h1 id="name">Juan Pablo Huertas</h1>
+				<h2>Full stack developer</h2>
+				<div class="social_links">
+					<a href="https://www.linkedin.com/in/juanpablohuertas/" aria-label="Link a mi perfil de Linkedin"><i class="ri-linkedin-box-fill"></i></a>
+					<a href="https://github.com/JuanPabloHuertas" aria-label="Link a mi perfil de Github"><i class="ri-github-fill"></i></a>
+				</div>
+			</div>
+		</main>
 	</body>
 </html>
